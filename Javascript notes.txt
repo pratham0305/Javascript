@@ -1,0 +1,263 @@
+                                                                                     JavaScript Notes And Codes
+1. Variables:
+Syntax:
+ ## var Variable_Name ='pratham';      /*In javascript we have to add ';' at the end of the every function.
+
+                                                         /* console.log('string'or a variable name) is used to put in the console(Go at inspect and click              				at console) of the webpage.
+ ## var number = 23;
+
+##     /* alert('we can pass anything in it'); is function in javascript that pops alert on a webpage and stays there until we                                           click 'ok' on it. 
+##    /* prompt() is a type function which works exactly like 'input()' in python.
+I/P:
+var hello = prompt('What are you?');  /*prompt() will ask for a input and assign the value to 'hello' variable.
+
+## 'typeof' is a function that tells us the data tye we are using.
+
+## The syntax of if nad else statments are same as C++ .
+I/P:
+if(){}
+else{}
+## in javascript the switch cases are same as in C or C++.
+
+## Functions:
+I/P:
+function Function_Name(argument){} /*Defining a function.
+Function_Name();  /*Calling the function.
+          /* We can also assign function to a variable.
+I/P:
+var name = function(firstname,surname){}  /*When we assign a function to a variable we do not need to type the name of the function.
+                                                                                            /* To call the function we have to type 'name(firstname,surname)'.
+
+## Arrays:-
+I/P:
+var names = ['pratham', 'gupta', 'hello', 'world']; /*Two ways to
+var years = new Array(1232, 1938, 1947, 2001);             declare an array.
+years[years.length] = 1234;           /*How to  add new element to the array and we can use 
+names[2] = 'markiplier';            'Array_name.push(Argument we want to pass)' to add an element. /*To replace an  element of the array and .unshift() will add the element at the front of the                                                                 								array.
+console.log(years);       /*Printing the array.
+console.log(names);
+
+## Objects:-
+I/P:
+var hello = {
+    firstName: 'pratham',                             /* Declaring an object, here 'firstName' is called key and 'pratham' is called value. 
+    age: 19,
+    address: 'chanderNagar',
+    family: ['father', 'mother', 'eldestSister', 'ElderSister']
+};
+console.log(hello);
+console.log(hello.age);      /*This a way to print a certain key. 
+console.log(hello['family']);  /*This is an other way to print the keys.But '[]' will only accept the  key as a string.
+var x = 'address';
+console.log(hello[x]);
+
+hello.firstName ='Anusha';  /*This is how we can change the  value of the keys.
+hello['age'] = 22;
+Another way of initializing the object:-
+I/P:
+var name = new object();
+name.firstName ='pratham';
+name.age = 29;
+name['lastName'] = 'gupta';
+Methods(functions) in an object:-
+I/P:
+var hello = {
+    firstName: 'pratham',                             /* Declaring an object, here 'firstName' is called key and 'pratham' is called value. 
+    age: 19'
+     birth: 1990,
+    address: 'chanderNagar',
+    family: ['father', 'mother', 'eldestSister', 'ElderSister']
+     calcAge: function(birthyear){           /*Here birthyear is for the argument that is going to be passed.
+              return 2020 - birthyear;}         
+};
+
+
+var hello = {
+    firstName: 'pratham',                             /* Declaring an object, here 'firstName' is called key and 'pratham' is called value. 
+    age: 19'
+     birth: 1990,
+    address: 'chanderNagar',
+    family: ['father', 'mother', 'eldestSister', 'ElderSister']
+     calcAge: function(){           /*Here 'this.' function is used to access the key of the object itself.
+              return 2020 - this.birth;}         
+};
+
+## In javascript the loop's syntax is same as C and C++.
+--------------------------------X----------------------------------------X----------------------------------------------------X----------------------------
+Note:- Javascript is not like the other languages that we only need to code and run.In this section, we will type only notes from 'Hoe javascript works behind the scenes.'
+
+Each javascript code is executed in different box's or containers y the compiler.In the code except the code inside the function(defined by us) is called global context and executed globally
+,the remaining functions are executed in different containers called execution object(for each function) in the form of satck.
+The javascript code is executed in 2 phases,i.e.
+First, Creation Phase: In this all the execution objects consists of the functions and their variables.In this phase,functions are actually predefined before the execution of the actual code
+and the variable are set to  'undefied' ,this is called Hoisting.Because of hoisting we can actually call the function first and then declare it.And after the hoisting comes the next step,The Creation Of Scope Chain,scope is nothing just a space/environment created by the user defined function.Now the last step of the creation phase is  " 'this' keyword ".Actually 'self' in python and 'this' have same uses.
+------------------------------------------------X-------------------------------X---------------------------------------X---------------------------------
+## Some codes for practice:-
+1.
+var name = 'pratham is great';
+console.log(name);
+alert('Is Anshua Gupta is stupid?');
+var year = prompt('In when year you were born?');
+console.log('My father was born in year:' + '' + year);
+var age = 2020 - year;
+console.log('And his age is:' + '' + age);
+console.log(typeof name); 
+
+2.
+var surnamme = prompt("What is your name?");
+console.log(surnamme); 
+
+3.
+var names = ['pratham', 'gupta', 'hello', 'world'];
+var years = new Array(1232, 1938, 1947, 2001);
+years[years.length] = 1234;
+names[2] = 'markiplier';
+console.log(years);
+console.log(names); 
+var hello = {
+    firstName: 'pratham',
+    age: 19,
+    address: 'chanderNagar',
+    family: ['father', 'mother', 'eldestSister', 'ElderSister']
+};
+---------------------------X------------------------------------------X-------------------------------------------X-----------------------------------
+Note: All code before this topic are just to interact with console of the webpage but not the webpage itself.
+## DOM Mainupilation: When we use javascript language to actually interact with any webpage ,it is called DOM(Document Object Model) Mainupilation.
+
+To access any element form the webpage in javascript we use a line of code which is ,
+I/P:
+document.querySelector('  "#Id-name or .class-name"  ');        /*It accepts arguments in form of strings.And it also selects the element jsut like in CSS.
+To understand the DOM  mainupilation check out the pig game that you made at your github.
+-----------------------------------X-----------------------X----------------------------
+## In javascript we call a class as a prototype.
+##
+I/P:
+//Function Constructors and also in naming of these the first word if the alphabet should be capital as'P' in 'Person'. 
+var Person = function(name, yearofbirth, age) { //Here 'name' , 'yearofbirth' and 'age' are the arguments which are going to be passed.
+    this.name = name;    //Here 'this.name =name' tells us that whatever passess through 'this.name' will be saved to 'name' variable.
+    this.yearofbirth = yearofbirth;
+    this.age = age;
+}
+
+var pratham = new Person ('Anusha',1998,22); //Here, 'pratham' is a new object or 'this.' that contains some attributes and 'pratham' is called an instance of 'Person'.
+Note:- And here 'new' is used to point the object 'pratham' to 'Person'. 
+
+I/P:
+var Person = function(name, yearofbirth, age) { 
+    this.name = name;    
+    this.yearofbirth = yearofbirth;
+    this.age = age;
+}
+
+Person.prototype.calculateAge = function() { //Here by using '.prototype.' property we just gave the access of the 'calculateAge();'  to every new objects.
+    console.log('2020' - this.yearofbirth);
+}
+var pratham = new Person('Anusha', 1998, 22); 
+var anusha = new Person('Pratham', 2001, 19);   //This is calles inheritance in javascript.
+pratham.calculateAge();
+anusha.calculateAge();
+Person.prototype.lastName = 'gupta';
+console.log(anusha.lastName);
+console.log(pratham.lastName);               Note:- We can also use '.protoype.' property for new varibles too.
+
+I/P:
+var personProto = {                                  //Declaring class.
+     calculateAge = function() {
+         console.log(2020 - this.yearofbirth);
+     }
+ };
+
+ var pratham = Object.create(personProto);
+ pratham.name = 'Anusha';
+ pratham.yearofbirth = 2001;
+ //These are the two ways to declare two objects.
+
+ var anusha = Object.create(personProto, {
+     name: { value: 'pratham' },
+     yearofbirth: { value: 1998 }
+ });
+
+I/P:
+ var years = [1998, 1993, 1734, 1892]; //This is the array that will be passed as 'arr' below.
+
+ function arrayCalc(arr, fn) {  // A Function accepting other functions as arguments.
+     var ResultArr = [];
+
+     for (var i = 0; i < arr.length; i++) {
+         ResultArr.push(fn(arr[i]));
+     }
+     return ResultArr;
+
+ }
+
+ function calculateAge(el) {  //This is the function that is going to be passed as an argument as an argument.
+     return 2020 - el;
+ }
+
+ var ages = arrayCalc(years, calculateAge);
+ console.log(ages);
+
+
+##Returning a function.
+
+I/P:
+
+ function interviewQuestion(job) {
+     if (job === 'designer') {
+         return function(name) {
+             console.log(name + ', which language do you prefer?');
+         }
+     } else if (job === 'athlete') {
+         return function(name) {
+             console.log(name + ', which sport do you play?');
+         }
+     } else {
+         return function(name) {
+             console.log(name + ', hello what do you do?');
+         }
+     }
+ }
+ var answer = interviewQuestion('anything');
+ answer('anusha');    
+
+ interviewQuestion('designer')('modi');//Another way of calling the function.
+
+ // IIFE (The process to treat a function like an expression.).
+I/P: 
+  (function game() {
+      var score = Math.random() * 10;
+      return console.log(score <= 5);
+  })(); 
+
+I/P:
+
+ (function game(goodluck) {
+     var score = Math.random() * 10;
+     return console.log(score <= (5 - goodluck));
+ })(4);  //Here, '();' is used to accept he arguments of the anonymous function.
+
+I/P:
+ var john = {
+     name: 'Pratham',
+     age: 19,
+     presentation: function(job, yearofbirth) {
+         if (job === 'designer') {
+             console.log('Hello I am ' + this.name + ' and i was born in ' + yearofbirth + 'and i am a' + job);
+         } else if (job === 'painter') {
+             console.log('Hello I am ' + this.name + 'and i was born in ' + yearofbirth + 'and i am a ' + job);
+         }
+
+     }
+ };
+
+ var mark = {
+     name: 'Markiplier', //Other object instance.
+     age: 30
+ };
+ //These are the methods by which an object can access other objects method.
+ john.presentation.call(mark, 'designer', 1344); //This is 'call' process.
+
+ john.presentation.apply(mark, ['painter', 1293]); //This ia 'apply' process.
+
+ var further = john.presentation.bind(mark, 'designer'); //This is 'bind' process.
+ further(2010);
