@@ -3,10 +3,10 @@
 Syntax:
  ## var Variable_Name ='pratham';      /*In javascript we have to add ';' at the end of the every function.
 
-                                                         /* console.log('string'or a variable name) is used to put in the console(Go at inspect and click              				at console) of the webpage.
+                                                         /* console.log('string'or a variable name) is used to put in the console(Go at inspect and click at console) of the webpage.
  ## var number = 23;
 
-##     /* alert('we can pass anything in it'); is function in javascript that pops alert on a webpage and stays there until we                                           click 'ok' on it. 
+##     /* alert('we can pass anything in it'); is function in javascript that pops alert on a webpage and stays there until we  click 'ok' on it. 
 ##    /* prompt() is a type function which works exactly like 'input()' in python.
 I/P:
 var hello = prompt('What are you?');  /*prompt() will ask for a input and assign the value to 'hello' variable.
