@@ -85,10 +85,9 @@ var hello = {
 --------------------------------X----------------------------------------X----------------------------------------------------X----------------------------
 
 
-Note:- Javascript is not like the other languages that we only need to code and run.In this section, we will type only notes from 'Hoe javascript works behind the scenes.'
-Each javascript code is executed in different box's or containers y the compiler.In the code except the code inside the function(defined by us) is called global context and executed globally
-,the remaining functions are executed in different containers called execution object(for each function) in the form of satck.
-The javascript code is executed in 2 phases,i.e.First, Creation Phase: In this all the execution objects consists of the functions and their variables.In this phase,functions are actually predefined before the executionof the actual code and the variable are set to  'undefied' ,this is called Hoisting.Because of hoisting we can actually call the function first and then declare it.And after the hoisting comes the next step,The Creation Of Scope Chain,scope is nothing just a space/environment created by the user defined function.Now the last step of the creation phase is  " 'this' keyword ".Actually 'self' in python and 'this' have same uses.
+Note:- Javascript is not like the other languages that we only need to code and run.In this section, we will type only notes from 'How javascript works behind the scenes.'
+Each javascript code is executed in different box's or containers the compiler.In the code except the code inside the function(defined by us) is called global context and executed globally,the remaining functions are executed in different containers called execution object(for each function) in the form of satck.
+The javascript code is executed in 2 phases,i.e.First, Creation Phase: In this all the execution objects consists of the functions and their variables.In this phase,functions are actually predefined before the execution of the actual code and the variable are set to 'undefied' ,this is called Hoisting.Because of hoisting we can actually call the function first and then declare it.And after the hoisting comes the next step,The Creation Of Scope Chain,scope is nothing just a space/environment created by the user defined function.Now the last step of the creation phase is  " 'this' keyword ".Actually 'self' in python and 'this' have same uses.
 ------------------------------------------------X-------------------------------X---------------------------------------X---------------------------------
 ## Some codes for practice:-
 1.
@@ -151,7 +150,7 @@ Person.prototype.calculateAge = function() { //Here by using '.prototype.' prope
     console.log('2020' - this.yearofbirth);
 }
 var pratham = new Person('Anusha', 1998, 22); 
-var anusha = new Person('Pratham', 2001, 19);   //This is calles inheritance in javascript.
+var anusha = new Person('Pratham', 2001, 19);   //This is called inheritance in javascript.
 pratham.calculateAge();
 anusha.calculateAge();
 Person.prototype.lastName = 'gupta';
@@ -188,7 +187,7 @@ I/P:
 
  }
 
- function calculateAge(el) {  //This is the function that is going to be passed as an argument as an argument.
+ function calculateAge(el) {  //This is the function that is going to be passed as an argument.
      return 2020 - el;
  }
 
@@ -232,7 +231,7 @@ I/P:
  (function game(goodluck) {
      var score = Math.random() * 10;
      return console.log(score <= (5 - goodluck));
- })(4);  //Here, '();' is used to accept he arguments of the anonymous function.
+ })(4);  //Here, '();' is used to accept the arguments of the anonymous function.
 
 I/P:
  var john = {
