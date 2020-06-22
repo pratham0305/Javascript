@@ -32,8 +32,7 @@ var name = function(firstname,surname){}  /*When we assign a function to a varia
 I/P:
 var names = ['pratham', 'gupta', 'hello', 'world']; /*Two ways to
 var years = new Array(1232, 1938, 1947, 2001);             declare an array.
-years[years.length] = 1234;           /*How to  add new element to the array and we can use 
-names[2] = 'markiplier';            'Array_name.push(Argument we want to pass)' to add an element. /*To replace an  element of the array and .unshift() will add the element at the front of the                                                                 								array.
+years[years.length] = 1234;           /*How to  add new element to the array and we can use names[2] = 'markiplier'; 'Array_name.push(Argument we want to pass)' to add an element. /*To replace an  element of the array and .unshift() will add the element at the front of the array.
 console.log(years);       /*Printing the array.
 console.log(names);
 
