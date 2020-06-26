@@ -258,3 +258,10 @@ I/P:
 
  var further = john.presentation.bind(mark, 'designer'); //This is 'bind' process.
  further(2010);
+ 
+ ## Template String :-
+ I/P:
+ let name = 'Markipler';
+console.log(`Hello, my name is ${name}!`);
+O/P:
+Hello, my name is Markiplier!
