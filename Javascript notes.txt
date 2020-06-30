@@ -271,3 +271,8 @@ I/P:
 const newParagraph = document.querySelector('p') //We can make any tye of new HTML element.
 newParagraph.textContent = 'My name is Pratham Gupta.'
 document.querySelector('body').appendChild(newParagraph)  //Here, we chose <body> to insert the new element and .appendChild inserts the element just before the ending of the                                                                       tag .
+## Getting input from the user through web page:- 
+I/P: 
+document.querySelector('#search').addEventListener('input', function(e) { //Here, '#search' is the id of the <input> tag used.
+    console.log(e.target.value)  //Here, e.target.value gives us the value of the <input> tag we have targeted with id name 'search'.
+})
