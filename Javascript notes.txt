@@ -265,3 +265,9 @@ I/P:
 console.log(`Hello, my name is ${name}!`);
 O/P:
 Hello, my name is Markiplier!
+
+## Adding a new element using javascript in the webpage :-
+I/P:
+const newParagraph = document.querySelector('p') //We can make any tye of new HTML element.
+newParagraph.textContent = 'My name is Pratham Gupta.'
+document.querySelector('body').appendChild(newParagraph)  //Here, we chose <body> to insert the new element and .appendChild inserts the element just before the ending of the                                                                       tag .
