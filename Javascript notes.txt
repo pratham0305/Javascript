@@ -275,4 +275,22 @@ document.querySelector('body').appendChild(newParagraph)  //Here, we chose <body
 I/P: 
 document.querySelector('#search').addEventListener('input', function(e) { //Here, '#search' is the id of the <input> tag used.
     console.log(e.target.value)  //Here, e.target.value gives us the value of the <input> tag we have targeted with id name 'search'.
+    
+})
+
+## Interacting with forms using JS:-
+Disclamer - Here, '#name-form' is the id of the form tag, 
+HTML code:
+I/P:
+ <form id="name-form">
+        <input type="text" placeholder="First Name" name="firstName">
+        <button>Submit</button>
+    </form>
+JavaScipt code:
+I/P:
+
+document.querySelector('#name-form').addEventListener('submit', function(e) {
+    e.preventDefault() //This will prevent the refreshing of the URL of the webpage after submitting the form.
+    console.log(e.target.elements.firstName.value) //Here, .elements is used to access the elements inside the form tag and 'firstName' is the name="" attribute for the <input>
+                                                       inside the form.
 })
